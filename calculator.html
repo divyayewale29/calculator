@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        .container{
+            width: 400px;
+            background-color: rgb(149, 125, 125);
+            border-radius: 15px;
+            padding: 5px;
+            margin-left: 35%;
+            border: 4px solid black;
+            
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 10px;
+            padding: 5px;
+        }
+       
+        .btn{
+           height: 60px;
+           width: 80px;
+           margin-top: 10px;
+           border-radius: 105px;
+           border: 2px solid black;
+           font-size: 35px;
+           font-weight: bold;
+           color:white;
+           background-color: gray;
+           box-shadow: 0px 3px 10px black;
+            
+        }
+        .btn:hover{
+            box-shadow: 0px 4px 8px white;
+            cursor: pointer;  
+            transition: 0.5s;  
+        }
+        .bg-sky{
+            background-color: rgb(104, 172, 224);
+            border:3px inset black;
+        }
+        .bg-red{
+            background-color: rgb(207, 15, 18);
+            border:3px inset black;
+        }
+        .iscreen{
+            width: 100%;
+            height: 60px;
+            border: 2px solid rgb(40, 39, 39);
+            box-shadow: 0px 2px 8px rgb(117, 99, 99);
+            font-size: 50px;
+            background-color: #bfd1d6;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .brand{
+            font-size: 30px;
+            font-family:cursive;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="brand">RTC</span>
+        <div class="row">
+            <input type="text" class="iscreen"/>
+        </div>
+
+        <div class="row">
+            <button class="btn">7</but;ton>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn bg-red">C</button>
+
+        </div>
+
+        <div class="row">
+            <button class="btn">4</but;ton>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn bg-sky">*</button>
+
+        </div>
+
+
+        <div class="row">
+            <button class="btn">1</but;ton>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn bg-sky">/</button>
+
+        </div>
+
+        
+        <div class="row">
+            <button class="btn">0</but;ton>
+            <button class="btn bg-sky">.</button>
+            <button class="btn bg-sky">=</button>
+            <button class="btn bg-sky">+/-</button>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
