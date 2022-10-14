@@ -2,6 +2,24 @@
 <html lang="en">
 <head>
     <title>Calculator</title>
+    <script>
+        function presssingbutton(btnvalue){
+            console.log(btnvalue)
+            let calcitxt=document.querySelector(".iscreen").value+btnvalue+"";
+            document.querySelector(".iscreen").value=calcitxt;
+        }
+
+        function calculation(){
+            let calcitxt=document.querySelector(".iscreen").value;
+            document.querySelector(".iscreen").value= eval(calcitxt);
+
+        }
+
+        function clr(){
+            document.querySelector(".iscreen").value= "";
+
+        }
+    </script>
     <style>
         .container{
             width: 400px;
@@ -72,36 +90,36 @@
         </div>
 
         <div class="row">
-            <button class="btn">7</but;ton>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn bg-red">C</button>
+            <button class="btn" onclick="presssingbutton(7)">7</but;ton>
+            <button class="btn" onclick="presssingbutton(8)">8</button>
+            <button class="btn" onclick="presssingbutton(9)">9</button>
+            <button class="btn bg-red" onclick="clr()">C</button>
 
         </div>
 
         <div class="row">
-            <button class="btn">4</but;ton>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn bg-sky">*</button>
+            <button class="btn" onclick="presssingbutton(4)">4</but;ton>
+            <button class="btn" onclick="presssingbutton(5)">5</button>
+            <button class="btn" onclick="presssingbutton(6)">6</button>
+            <button class="btn bg-sky" onclick="presssingbutton('*')">*</button>
 
         </div>
 
 
         <div class="row">
-            <button class="btn">1</but;ton>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn bg-sky">/</button>
+            <button class="btn" onclick="presssingbutton(1)">1</but;ton>
+            <button class="btn" onclick="presssingbutton(2)">2</button>
+            <button class="btn" onclick="presssingbutton(3)">3</button>
+            <button class="btn bg-sky" onclick="presssingbutton('/')">/</button>
 
         </div>
 
         
         <div class="row">
-            <button class="btn">0</but;ton>
-            <button class="btn bg-sky">.</button>
-            <button class="btn bg-sky">=</button>
-            <button class="btn bg-sky">+/-</button>
+            <button class="btn" onclick="presssingbutton(0)">0</but;ton>
+            <button class="btn bg-sky" onclick="presssingbutton('+')">+</button>
+            <button class="btn bg-sky" onclick="calculation()">=</button>
+            <button class="btn bg-sky" onclick="presssingbutton('-')">-</button>
 
         </div>
 
