@@ -19,6 +19,17 @@
             document.querySelector(".iscreen").value= "";
 
         }
+
+
+        function btn1on(){
+           let btn = document.getElementsByClassName("btn1on").value;
+           document.querySelector(".iscreen").value= eval(btn);
+        }
+
+        function btn1off(){
+           let btn = document.getElementsByClassName("btn1off").value;
+           document.querySelector(".iscreen").value="";
+        }
     </script>
     <style>
         .container{
@@ -79,12 +90,25 @@
             font-family:cursive;
             color: white;
         }
+        .btn1{
+           
+            justify-content: space-between;
+            margin-left: 100px;
+            padding: 10px;
+            width: 60px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-family:cursive;
+            font-size: 15px;
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
         <span class="brand">RTC</span>
+        <button class="btn1" onclick="btn1on()">ON</button>
+        <button class="btn1" onclick="btn1off()">OFF</button>
         <div class="row">
             <input type="text" class="iscreen"/>
         </div>
